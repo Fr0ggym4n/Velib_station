@@ -32,7 +32,7 @@ const fetchInfoVelib = () => {
   }
   
   const fecthInfoMeteo = () => {
-    const urlMeteo = 'https://api.weatherbit.io/v2.0/current?postal_code=75000&country=Fr&key=e8cbe2ad754042dcaa48f00ad893d849'
+    const urlMeteo = 'https://api.weatherbit.io/v2.0/current?postal_code=75000&country=Fr&key=""Place your API KEY here""'
     fetch(urlMeteo).then((response) =>
       response.json().then((data) => {
         selection.innerHTML = ""
@@ -68,5 +68,5 @@ const fetchInfoVelib = () => {
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoiY2hhcmx5Y210IiwiYSI6ImNrbnJsMTFjZDBwZDEyb28xOXFxd3piZ3AifQ.TccBfcpo7uETgRGf6ReHWQ'
+      accessToken: 'Place your API KEY here' 
   }).addTo(myMap);
